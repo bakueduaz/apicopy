@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify, abort
+from flask_cors import CORS # type: ignore
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 # Sample API key
 API_KEY = '1234567890abcdef1234567890abccxz'
